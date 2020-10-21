@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!--
+
+    ETTAHI Yahya
+
+-->
+
+
+<html lang="ar">
+	<head>
+		<meta charset="utf-8" />
+	    <meta name="author" content="ETTAHI Yahya ">
+		<meta name="description" content="Projet de technologie de Web">
+		<meta name="keywords" content="Projet,Technologies de Web,EMI, Covid19">
+
+
+		<title>شكرا لك دكتور</title>
+
+		<link rel="stylesheet"  href="./css/style.css">
+
+		
+	    <link rel="icon" href="./image/icon.png">
+
+	</head>
+
+	
+
+<body>
+	<script>
+		function DateWebWorker() {
+		  var offsetUTC = +12,
+		  lD = new Date();
+		 
+		  document.getElementById('time').innerHTML = ""+lD.toLocaleString();
+		}
+		 
+		window.onload=function() {
+		  DateWebWorker();
+		  setInterval(DateWebWorker,1000);
+		}
+	</script>
+	<header>
+		<div class="container">
+			<div id="titre">
+				<h1><span class ="heighlight">مشروع تكنولوجيا الويب</span> - شكرا لك دكتور </h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.ar.html">استقبال</a></li>
+					<li><a href="./livreDor/guestbook.html">الشهادات</a></li>
+					<li><a href="about.ar.html">حول</a></li>
+					<li><a href="index.html"><span><img src="image/france.png"  alt="langue française" width="30" height="30" /></span></a></li>
+				</ul>
+			</nav>
+		</div>	
+	</header>
+
+	<section id="showcase">
+		<div class="container">
+			<h2 style="font-size: 350%"> ! شكرا لك دكتور  </h2>
+			شكرا: كل الطرق لتحية مقدمي الرعاية الذين يقاتلون ضد الفيروس التاجي
+			 </p>
+		</div>
+	</section>
+
+
+	
+	<footer>
+		<p>مشروع تكنولوجيا الويب - شكرا لك دكتور, جميع الحقوق محفوظة &copy; 2020</p>
+		<a href="https://html5.validator.nu/?doc=http%3A%2F%2Fyasmina.emi.ac.ma%2F%7Eyettahi%2Findex.html">
+				<img src="./image/W3C_HTML5_certified.png" alt="HTML5 Validation" width="95" height="35">
+			</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		        <img style="border:0;width:88px;height:31px"
+		        src="http://jigsaw.w3.org/css-validator/images/vcss"
+		        alt="CSS Valide !" />
+		    </a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		    	<img style="border:0;width:88px;height:31px"
+		        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+		        alt="CSS Valide !" />
+		    </a>
+		<p id="time"></p>
+	</footer>
+</body>
+</html>
